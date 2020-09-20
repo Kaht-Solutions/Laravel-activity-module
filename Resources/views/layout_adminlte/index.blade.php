@@ -1,5 +1,5 @@
 @extends('theme::layout_adminlte.master')
-@section('title') {{ $title=trans('activity::messages.activites') }}
+@section('title') {{ $title=trans('activity::messages.activities') }}
 @stop
 @section('content')
 

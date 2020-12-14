@@ -13,9 +13,7 @@
 
 Route::group(['prefix' => 'admin',
     'middleware' => ['web', 'auth', 'clearcache', 'permission_check']], function () {
-
-    Route::group(['prefix' => 'activity'], function () {
-        Route::get('/', "ActivityController@Index");
+        Route::group(['prefix' => 'activity'], function () {
+            Route::get('/', "ActivityController@Index");
+        });
     });
-
-});

@@ -8,13 +8,12 @@ use Spatie\Activitylog\Models\Activity;
 
 class ActivityController extends Controller
 {
-
     public function Index(Request $request)
     {
         $activities = Activity::
             when($request->filled('causer_id'), function ($query) use ($request) {
-            $query->where('causer_id', $request->causer_id)->get();
-        })
+                $query->where('causer_id', $request->causer_id)->get();
+            })
             ->when($request->filled('causer_type'), function ($query) use ($request) {
                 $query->where('causer_type', $request->causer_type)->get();
             })
@@ -22,5 +21,4 @@ class ActivityController extends Controller
 
         return view('activity::' . env("ADMIN_THEME") . '.index')->with('activities', $activities);
     }
-
 }

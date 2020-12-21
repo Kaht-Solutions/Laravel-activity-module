@@ -8,4 +8,6 @@ return [
     "causer_type" => "Causer Type",
     "properties" => "ویژگی ها",
     "created_at" => "تاریخ ایجاد",
+    "empty" => "متاسفانه اطلاعاتی جهت نمایش وجود ندارد",
+    "activities" => "سابقه فعالیت ها",
 ];

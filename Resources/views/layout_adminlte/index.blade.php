@@ -1,5 +1,5 @@
 @extends('theme::layout_adminlte.master')
-@section('title') {{ $title=trans('activity::messages.activites') }}
+@section('title') {{ $title=trans('activity::messages.activities') }}
 @stop
 @section('content')
 
@@ -13,42 +13,42 @@
 
 
 <table data-toggle="table" data-pagination="true" data-search="true" data-use-row-attr-func="true"
-    data-reorderable-rows="true" data-locale="fa-IR"
+    data-reorderable-rows="false" data-locale="fa-IR"
     class="table table-hover tablesorter table-striped table-borderd text-center">
     <thead>
         <tr class="info">
 
-            <th>
+            <th data-sortable="true">
                 {{ trans('activity::messages.log_name') }}
             </th>
 
-            <th>
+            <th data-sortable="true">
                 {{ trans('activity::messages.description') }}
             </th>
 
-            <th>
+            <th data-sortable="true">
                 {{ trans('activity::messages.subject_id') }}
             </th>
 
-            <th>
+            <th data-sortable="true">
                 {{ trans('activity::messages.subject_type') }}
             </th>
 
-            <th>
+            <th data-sortable="true">
                 {{ trans('activity::messages.causer_id') }}
             </th>
 
-            <th>
+            <th data-sortable="true">
                 {{ trans('activity::messages.causer_type') }}
             </th>
 
-            <th>
+            <th data-sortable="true">
                 {{ trans('activity::messages.properties') }}
             </th>
 
 
 
-            <th>
+            <th data-sortable="true">
                 {{ trans('activity::messages.created_at') }}
             </th>
 

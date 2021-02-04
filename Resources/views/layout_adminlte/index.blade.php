@@ -74,7 +74,7 @@
             </td>
             <td>
                 @if(config('app.locale')=="fa")
-                {{\Morilog\Jalali\Jalalian::forge($activity -> created_at)->format('%d %B, %Y')}}
+                {{\Morilog\Jalali\Jalalian::forge($activity -> created_at)->format('Y-m-d')}}
                 @else
                 {{$activity->created_at}}
                 @endif
